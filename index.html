@@ -125,6 +125,241 @@
     <a href="#">جدیدترین بازی‌ها</a>
     <a href="#">دسته‌بندی‌ها</a>
   </nav>
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitGirl Persian - بازی‌های کم حجم</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #000;
+      color: #ff0000;
+    }
 
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #1a1a1a;
+      border-bottom: 2px solid #ff0000;
+    }
+
+    header img {
+      width: 120px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    header h1 { margin:0; font-size:32px; color:#ff0000; }
+    header h2 { margin:5px 0; font-size:24px; color:#ff6666; }
+    header p { margin:10px 0 0; font-size:18px; color:#ff9999; }
+
+    main { padding: 20px; max-width: 1000px; margin: auto; }
+
+    .post {
+      background-color: #1a1a1a;
+      border: 2px solid #ff0000;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      padding: 15px;
+    }
+
+    .post img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .post h3 {
+      color: #ff4d4d;
+      margin: 0 0 10px 0;
+    }
+
+    .post p {
+      color: #ff9999;
+      line-height: 1.6;
+    }
+
+    .read-more {
+      display: block;
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #ff0000;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      width: 150px;
+      text-align: center;
+    }
+
+    .read-more:hover { background-color: #cc0000; }
+
+    /* ادامه مطلب و دانلود */
+    .more-content {
+      display: none;
+      margin-top: 10px;
+      padding: 15px;
+      background-color: #2a2a2a;
+      border-radius: 8px;
+      border: 1px solid #ff0000;
+    }
+
+    .download-box {
+      margin-top: 15px;
+      padding: 10px;
+      background-color: #ff1a1a;
+      border-radius: 5px;
+      color: #fff;
+    }
+
+    .download-box p {
+      margin: 5px 0;
+    }
+
+    .download-box a {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    nav {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #1a1a1a;
+      display: flex;
+      justify-content: space-around;
+      border-top: 2px solid #ff0000;
+    }
+
+    nav a {
+      padding: 15px 0;
+      flex: 1;
+      text-align: center;
+      color: #ff6666;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #ff0000;
+      color: #fff;
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="logo.png" alt="FitGirl Logo">
+  <h1>FitGirl Persian</h1>
+  <h2>فیت گرل فارسی</h2>
+  <p>تنها و بهترین منبع دانلود بازی های کرکی و فشرده</p>
+</header>
+
+<main>
+
+<!-- تکرار پست‌ها -->
+<div class="post">
+  <img src="game1.jpg" alt="Game 1">
+  <h3>عنوان بازی ۱</h3>
+  <p>توضیح کوتاه بازی ۱…</p>
+  <a href="#" class="read-more" onclick="toggleContent(this); return false;">ادامه مطلب</a>
+  <div class="more-content">
+    <p>توضیحات کامل بازی ۱…</p>
+    <div class="download-box">
+      <p>دانلود: <a href="https://example.com/game1.zip" target="_blank">لینک دانلود</a></p>
+      <p>پسورد: 12345</p>
+    </div>
+  </div>
+</div>
+
+<div class="post">
+  <img src="game2.jpg" alt="Game 2">
+  <h3>عنوان بازی ۲</h3>
+  <p>توضیح کوتاه بازی ۲…</p>
+  <a href="#" class="read-more" onclick="toggleContent(this); return false;">ادامه مطلب</a>
+  <div class="more-content">
+    <p>توضیحات کامل بازی ۲…</p>
+    <div class="download-box">
+      <p>دانلود: <a href="https://example.com/game2.zip" target="_blank">لینک دانلود</a></p>
+      <p>پسورد: 12345</p>
+    </div>
+  </div>
+</div>
+
+<!-- می‌توانی همین ساختار را تا 10 پست کپی کنی -->
+<div class="post">
+  <img src="game3.jpg" alt="Game 3">
+  <h3>عنوان بازی ۳</h3>
+  <p>توضیح کوتاه بازی ۳…</p>
+  <a href="#" class="read-more" onclick="toggleContent(this); return false;">ادامه مطلب</a>
+  <div class="more-content">
+    <p>توضیحات کامل بازی ۳…</p>
+    <div class="download-box">
+      <p>دانلود: <a href="https://example.com/game3.zip" target="_blank">لینک دانلود</a></p>
+      <p>پسورد: 12345</p>
+    </div>
+  </div>
+</div>
+
+<!-- اضافه کردن پست‌های ۴ تا ۱۰ مشابه بالا -->
+<div class="post">
+  <img src="game4.jpg" alt="Game 4">
+  <h3>عنوان بازی ۴</h3>
+  <p>توضیح کوتاه بازی ۴…</p>
+  <a href="#" class="read-more" onclick="toggleContent(this); return false;">ادامه مطلب</a>
+  <div class="more-content">
+    <p>توضیحات کامل بازی ۴…</p>
+    <div class="download-box">
+      <p>دانلود: <a href="https://example.com/game4.zip" target="_blank">لینک دانلود</a></p>
+      <p>پسورد: 12345</p>
+    </div>
+  </div>
+</div>
+
+<div class="post">
+  <img src="game5.jpg" alt="Game 5">
+  <h3>عنوان بازی ۵</h3>
+  <p>توضیح کوتاه بازی ۵…</p>
+  <a href="#" class="read-more" onclick="toggleContent(this); return false;">ادامه مطلب</a>
+  <div class="more-content">
+    <p>توضیحات کامل بازی ۵…</p>
+    <div class="download-box">
+      <p>دانلود: <a href="https://example.com/game5.zip" target="_blank">لینک دانلود</a></p>
+      <p>پسورد: 12345</p>
+    </div>
+  </div>
+</div>
+
+<div class="post">
+  <img src="game6.jpg" alt="Game 6">
+  <h3>عنوان بازی ۶</h3>
+  <p>توضیح کوتاه بازی ۶…</p>
+  <a href="#" class="read-more" onclick="toggleContent(this); return false;">ادامه مطلب</a>
+  <div class="more-content">
+    <p>توضیحات کامل بازی ۶…</p>
+    <div class="download-box">
+      <p>دانلود: <a href="https://example.com/game6.zip" target="_blank">لینک دانلود</a></p>
+      <p>پسورد: 12345</p>
+    </div>
+  </div>
+</div>
+
+<div class="post">
+  <img src="game7.jpg" alt="Game 7">
+  <h3>عنوان بازی ۷</h3>
+  <p>توضیح کوتاه بازی ۷…</p>
+  <a href="#" class="read-more" onclick="toggleContent(this); return false;">ادامه مطلب</a>
+  <div class="more-content">
+    <p>توضیحات کامل بازی ۷…</p>
+    <div class="download-box">
+      <p>دانلود: <a href="https://example.com/game7.zip" target="_blank">لینک دانلود</a></p>
+      <p>پسورد: 123
+
+  
 </body>
 </html>
+
