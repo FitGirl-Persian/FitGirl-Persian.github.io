@@ -5,19 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FitGirl Persian - دانلود بازی</title>
   <style>
-    /* تنظیم فونت و رنگ‌ها */
+    /* فونت و رنگ‌ها */
     body {
       margin: 0;
       font-family: 'Arial', sans-serif;
-      background-color: #000; /* مشکی */
-      color: #ff0000; /* قرمز خونی */
+      background-color: #000;
+      color: #ff0000;
     }
 
-    /* هدر و لوگو */
+    /* هدر */
     header {
       text-align: center;
       padding: 20px;
-      background-color: #1a1a1a; /* مشکی با کمی خاکستری */
+      background-color: #1a1a1a;
       border-bottom: 2px solid #ff0000;
     }
 
@@ -33,18 +33,25 @@
       color: #ff0000;
     }
 
+    header h2 {
+      margin: 5px 0;
+      font-size: 24px;
+      color: #ff6666;
+    }
+
+    header p {
+      margin: 10px 0 0;
+      font-size: 18px;
+      color: #ff9999;
+    }
+
     /* بخش اصلی */
     main {
       padding: 40px 20px;
       text-align: center;
     }
 
-    main p {
-      font-size: 20px;
-      margin-bottom: 30px;
-    }
-
-    /* دکمه دانلود */
+    /* دکمه دانلود (مثال) */
     .download-btn {
       display: inline-block;
       padding: 15px 30px;
@@ -55,6 +62,7 @@
       border-radius: 8px;
       text-decoration: none;
       transition: 0.3s;
+      margin-top: 20px;
     }
 
     .download-btn:hover {
@@ -62,39 +70,61 @@
       transform: scale(1.05);
     }
 
-    /* فوتر */
-    footer {
-      text-align: center;
-      padding: 20px;
+    /* تب‌های پایین */
+    nav {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
       background-color: #1a1a1a;
+      display: flex;
+      justify-content: space-around;
       border-top: 2px solid #ff0000;
-      margin-top: 50px;
     }
 
-    footer p {
-      margin: 0;
-      color: #ff4d4d;
+    nav a {
+      padding: 15px 0;
+      flex: 1;
+      text-align: center;
+      color: #ff6666;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #ff0000;
+      color: #fff;
+    }
+
+    /* ریسپانسیو */
+    @media (max-width: 600px) {
+      header h1 { font-size: 24px; }
+      header h2 { font-size: 18px; }
+      nav a { font-size: 14px; padding: 10px 0; }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <!-- لوگوی زن FitGirl -->
     <img src="logo.png" alt="FitGirl Logo">
     <h1>FitGirl Persian</h1>
+    <h2>فیت گرل فارسی</h2>
+    <p>تنها و بهترین منبع دانلود بازی های کرکی و فشرده</p>
   </header>
 
   <main>
-    <p>به سایت دانلود بازی خوش آمدید! آخرین نسخه‌ها و کرک‌های معتبر را اینجا پیدا کنید.</p>
-    
-    <!-- لینک دانلود -->
-    <a class="download-btn" href="https://example.com/game.zip" target="_blank">دانلود بازی</a>
+    <p>به سایت ما خوش آمدید! آخرین نسخه‌های بازی‌های کرکی و فشرده را از اینجا دانلود کنید.</p>
+    <a class="download-btn" href="https://example.com/game.zip" target="_blank">دانلود بازی نمونه</a>
   </main>
 
-  <footer>
-    <p>© 2025 FitGirl Persian | همه حقوق محفوظ است</p>
-  </footer>
+  <nav>
+    <a href="#">خانه</a>
+    <a href="#">انتخاب کتیگوری گیم</a>
+    <a href="#">ارتباط با ما</a>
+    <a href="#">جدیدترین بازی‌ها</a>
+    <a href="#">دسته‌بندی‌ها</a>
+  </nav>
 
 </body>
 </html>
